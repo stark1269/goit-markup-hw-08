@@ -1,17 +1,34 @@
 .clients-title {
+  margin-bottom: 30px;
+
+  @include desktop {
   margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: space-between;
 }
 
 .clients-item {
-  width: 170px;
+  width: 100%;
   height: 92px;
+
+  @include mobile {
+    width: calc((100% - 30px) / 2);
+  }
+
+    @include tablet {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @include desktop {
+      width: 170px;
+    }
 }
 
 .clients-link {

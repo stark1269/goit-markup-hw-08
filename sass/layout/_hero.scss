@@ -1,9 +1,9 @@
 .hero {
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
 
   background: $footer-color;
@@ -32,6 +32,9 @@
   }
 
     @include desktop {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      height: 600px;
       background-image: $gradient,
         url(../images/hero/hero.jpg);
 
@@ -45,22 +48,32 @@
 }
 
 .hero__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42/26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  width: 300px;
 
   color: $main-color;
+
+  @include mobile {
+    width: 360px;
+    }
+
+  @include desktop {
+    width: 696px;
+    font-size: 44px;
+    line-height: calc(60/44);
+    }
 }
 
 .hero__btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   font-family: inherit;
   font-weight: 700;
