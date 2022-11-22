@@ -180,6 +180,7 @@ padding: 16px 0;
 .icon-open {
   background-color: transparent;
   border: none;
+  transition: fill 250ms $transition;
 
   &:hover,
   &:focus {
@@ -198,6 +199,7 @@ padding: 16px 0;
 
   background-color: transparent;
   border: none;
+  transition: fill 250ms $transition;
 
   &:hover,
     &:focus {
@@ -220,6 +222,7 @@ padding: 16px 0;
   letter-spacing: 0.02em;
 
   color: $title-color;
+  transition: color 250ms $transition;
 
   &:hover,
     &:focus {
