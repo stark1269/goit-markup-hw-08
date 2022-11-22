@@ -896,8 +896,8 @@ address {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 310px;
+  min-height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -906,6 +906,17 @@ address {
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) translateY(-100%) scale(0);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -1004,22 +1015,36 @@ address {
   outline: 1px solid #2196f3;
 }
 .form-textarea::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .form-textarea:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .form-textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .form-textarea::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .form-textarea:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .form-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 
 .form-wrap {
@@ -1052,16 +1077,30 @@ address {
 
 .form-license {
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: #757575;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .form-license {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .license-link {
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: #2196f3;
   text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .license-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .form-btn {

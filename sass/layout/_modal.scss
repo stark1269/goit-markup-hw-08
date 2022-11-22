@@ -20,8 +20,8 @@
   left: 50%;
 
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 310px;
+  min-height: 609px;
 
   background-color: $main-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,6 +33,15 @@
 
   .is-hidden & {
       transform: translate(-50%, -50%) translateY(-100%) scale(0);
+    }
+
+    @include mobile {
+      width: 450px;
+    }
+
+    @include desktop {
+      width: 528px;
+      min-height: 581px;
     }
 }
 
@@ -148,11 +157,16 @@
     }
 
         &::placeholder {
-          font-size: 12px;
-          line-height: 1.16;
+          font-size: 14px;
+          line-height: calc(16/14);
           letter-spacing: 0.01em;
     
           color: rgba(117, 117, 117, 0.5);
+
+          @include desktop {
+            font-size: 12px;
+            line-height: calc(14/12);
+          }
         }
 }
 
@@ -189,18 +203,30 @@
 
 .form-license {
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14/12);
 
   color: $text-color;
   cursor: pointer;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(24/14);
+  }
 }
 
 .license-link {
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14/12);
 
   color: $accent-color;
   text-decoration: underline;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(24/14);
+}
 }
 
 .form-btn {
