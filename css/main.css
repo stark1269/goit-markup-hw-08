@@ -319,7 +319,7 @@ address {
 
 .mob-nav__link {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 31px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
@@ -341,7 +341,7 @@ address {
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -355,7 +355,7 @@ address {
 .mob-contact__mail {
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
@@ -384,7 +384,7 @@ address {
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
