@@ -71,11 +71,15 @@
 .modal-title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(30/20);
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $title-color;
+
+  @include desktop {
+    line-height: calc(23/20);
+  }
 }
 
 /* Форма */
