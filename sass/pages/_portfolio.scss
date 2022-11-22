@@ -1,10 +1,30 @@
 .margin-container {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include tablet {
+  margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .project-list {
-  display: flex;
-  justify-content: center;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.project-item {
+  display: inline-block;
+}
+
+.project-item:nth-child(-n+3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .project-item:not(:last-child) {
@@ -50,11 +70,19 @@
 }
 
 .project-item-img {
-  width: calc((100% - 60px) / 3);
-}
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop{
+    width: calc((100% - 60px) / 3);
+    }
+  }
 
 .project-link-img {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms $transition;
 
   &:hover,
@@ -68,6 +96,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .project-img-title {
@@ -96,7 +125,7 @@
   position: absolute;
   top: 0;
 
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
 
   font-size: 18px;
@@ -115,6 +144,10 @@
 
         .project-link-img:focus & {
           transform: translateY(0);
+        }
+
+        @include desktop {
+          padding: 63px 24px;
         }
 }
 
