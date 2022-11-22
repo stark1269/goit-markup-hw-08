@@ -91,10 +91,15 @@ address {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .title {
@@ -132,6 +137,16 @@ address {
 .header__logo {
   padding: 16px 0;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
 
 .accent {
   color: #000000;
@@ -139,6 +154,11 @@ address {
 
 .navigation__list {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -180,14 +200,23 @@ address {
 .contact-list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+  }
+}
 
 .contact-list__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,21 +224,46 @@ address {
 .contact-list__link:hover, .contact-list__link:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .contact-list__icon {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .tel {
   width: 10px;
-  height: 16px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .tel {
+    height: 16px;
+  }
 }
 
 .mob-menu {
@@ -225,6 +279,11 @@ address {
   height: 100vh;
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .icon-open {
   background-color: transparent;
@@ -232,6 +291,11 @@ address {
 }
 .icon-open:hover, .icon-open:focus {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .icon-open {
+    display: none;
+  }
 }
 
 .icon-close {
