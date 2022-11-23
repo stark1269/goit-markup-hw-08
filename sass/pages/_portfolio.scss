@@ -126,8 +126,7 @@
   top: 0;
 
   padding: 77px 24px;
-  height: 100%;
-
+  
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -144,6 +143,20 @@
 
         .project-link-img:focus & {
           transform: translateY(0);
+        }
+
+        @media screen and (max-width: 479px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding: 0 24px;
+          height: 100%;
+          font-size: 14px;
+        }
+        
+        @include tablet {
+          padding: 49px 24px 77px 24px;
         }
 
         @include desktop {
