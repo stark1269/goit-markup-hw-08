@@ -402,6 +402,10 @@ address {
   }
 }
 
+.mob-current {
+  color: #2196f3;
+}
+
 .hero {
   margin: 0 auto;
   padding-top: 118px;
@@ -690,13 +694,8 @@ address {
 }
 
 .clients-item {
-  width: 100%;
+  width: calc((100% - 30px) / 2);
   height: 92px;
-}
-@media screen and (min-width: 480px) {
-  .clients-item {
-    width: calc((100% - 30px) / 2);
-  }
 }
 @media screen and (min-width: 768px) {
   .clients-item {
@@ -761,6 +760,11 @@ address {
   margin-bottom: 28px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: start;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-wrapper {
@@ -782,6 +786,11 @@ address {
 @media screen and (max-width: 1199px) {
   .contact {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    text-align: start;
   }
 }
 
